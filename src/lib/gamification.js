@@ -1,7 +1,7 @@
 import { supabase } from './supabase'
 import toast from 'react-hot-toast'
 
-// ─── POINT VALUES ──────────────────────────────────────────────────────────
+// POINT VALUES
 export const XP = {
   CREATE_POST: 10,
   LIKE_POST: 2,
@@ -10,7 +10,7 @@ export const XP = {
   DELETE_POST: -5,
 }
 
-// ─── LEVEL THRESHOLDS ──────────────────────────────────────────────────────
+// LEVEL THRESHOLDS
 export const LEVELS = [
   { level: 1, name: 'Initiate',    minPoints: 0,    color: '#64748b', icon: '🔰' },
   { level: 2, name: 'Apprentice',  minPoints: 100,  color: '#00d4ff', icon: '⚡' },

@@ -39,7 +39,7 @@ export function getLevelInfo(points) {
   return { current, next, progress }
 }
 
-// ─── BADGE DEFINITIONS ─────────────────────────────────────────────────────
+// BADGE DEFINITIONS
 export const BADGE_DEFINITIONS = [
   {
     name: 'First Post',
@@ -116,7 +116,7 @@ export const BADGE_DEFINITIONS = [
   },
 ]
 
-// ─── MISSION DEFINITIONS ──────────────────────────────────────────────────
+// MISSION DEFINITIONS
 export const MISSION_DEFINITIONS = [
   {
     id: 'create_3_posts',
@@ -180,7 +180,7 @@ export const MISSION_DEFINITIONS = [
   },
 ]
 
-// ─── AWARD XP ──────────────────────────────────────────────────────────────
+// AWARD XP
 export async function awardXP(userId, amount, reason) {
   try {
     // Get current user stats
@@ -231,7 +231,7 @@ export async function awardXP(userId, amount, reason) {
   }
 }
 
-// ─── CHECK BADGES ──────────────────────────────────────────────────────────
+// CHECK BADGES
 export async function checkAndAwardBadges(userId, stats) {
   try {
     // Get existing user badges
@@ -283,7 +283,7 @@ export async function checkAndAwardBadges(userId, stats) {
   }
 }
 
-// ─── CHECK MISSIONS ────────────────────────────────────────────────────────
+// CHECK MISSIONS
 export async function checkMissions(userId, stats) {
   try {
     const { data: userMissions } = await supabase
@@ -328,7 +328,7 @@ export async function checkMissions(userId, stats) {
   }
 }
 
-// ─── DAILY LOGIN ───────────────────────────────────────────────────────────
+// DAILY LOGIN
 export async function processDailyLogin(userId) {
   try {
     const today = new Date().toISOString().split('T')[0]

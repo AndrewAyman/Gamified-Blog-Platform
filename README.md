@@ -2,7 +2,6 @@
 
 A production-ready gamified blog where users earn XP, unlock badges, and compete on a leaderboard. Built with React + Vite + Supabase.
 
-![XP Blog Screenshot](https://via.placeholder.com/1200x600/07070f/00d4ff?text=XP+Blog+%E2%80%94+Gamified+Blogging)
 
 ## ✨ Features
 
